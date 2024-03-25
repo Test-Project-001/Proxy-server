@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nitinsaa1999/testproject-nginx
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - D:\Test Project\proxyServer:/app
+    environment:
+      NODE_ENV: production
+    ports:
+      - 10000:80
