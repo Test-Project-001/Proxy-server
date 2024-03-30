@@ -9,6 +9,6 @@ services:
     volumes:
       - D:\Test Project\proxyServer:/app
     environment:
-      NODE_ENV: production
+      NODE_ENV: development
     ports:
       - 10000:80
