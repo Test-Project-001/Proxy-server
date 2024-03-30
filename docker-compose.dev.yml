@@ -1,13 +1,13 @@
 version: '3.8'
 
 services:
-  backend_node_dev:
-    build: ../Backend/Test-Backend  # Path to backend repository
-    docker-compose: ../Backend/Test-Backend/docker-compose.dev.yml
+  # backend_node_dev:
+  #   build: ../Backend/Test-Backend  # Path to backend repository
+  #   docker-compose: ../Backend/Test-Backend/docker-compose.dev.yml
 
-  frontend_next_dev:
-    build: ../Frontend/Test-Frontend/test-frotnend  # Path to frontend repository
-    docker-compose: ../Frontend/Test-Frontend/test-frotnend/docker-compose.dev.yml
+  # frontend_next_dev:
+  #   build: ../Frontend/Test-Frontend/test-frotnend  # Path to frontend repository
+  #   docker-compose: ../Frontend/Test-Frontend/test-frotnend/docker-compose.dev.yml
 
   nginx:
     image: nitinsaa1999/testproject-nginx_dev
