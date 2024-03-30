@@ -17,9 +17,9 @@ services:
       dockerfile: DockerfileDev
     volumes:
       - D:\Test Project\proxyServer:/app
-    depends_on:
-      - frontend_next_dev
-      - backend_node_dev
+    # depends_on:
+    #   - frontend_next_dev
+    #   - backend_node_dev
     environment:
       NODE_ENV: development
     ports:
