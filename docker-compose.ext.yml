@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  nginx_ext:
+    image: nitinsaa1999/testproject-nginx_ext
+    container_name: nitin_nginx_ext
+    build:
+      context: ./
+      dockerfile: DockerfileExt
+    # volumes:
+    #   - D:\Test Project\proxyServer:/app
+    # depends_on:
+    #   - frontend_next_dev
+    #   - backend_node_dev
+    environment:
+      NODE_ENV: production
+    ports:
+      - 10005:80
+    restart: unless-stopped
+    # command: sleep infinity
+    networks:
+      - my-ext-network
+
+networks:
+  my-ext-network:
+    driver: bridge
+    external: true
+
